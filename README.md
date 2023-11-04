@@ -1,1 +1,1 @@
-# splitkeyboard-zmk-config-zero
+# ZMK Config Zero
