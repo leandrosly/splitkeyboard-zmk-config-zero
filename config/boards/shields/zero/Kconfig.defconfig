@@ -4,3 +4,10 @@ config ZMK_KEYBOARD_NAME
     default "Zero"
 
 endif
+
+if SHIELD_ONE
+
+config ZMK_KEYBOARD_NAME
+    default "One"
+
+endif
