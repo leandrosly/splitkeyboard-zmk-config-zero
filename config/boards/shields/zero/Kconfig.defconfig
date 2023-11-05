@@ -1,0 +1,6 @@
+if SHIELD_ZERO
+
+config ZMK_KEYBOARD_NAME
+    default "Zero"
+
+endif
