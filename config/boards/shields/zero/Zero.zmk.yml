@@ -1,0 +1,12 @@
+file_format: "1"
+id: Zero
+name: Zero
+type: shield
+url: https://github.com/leandrosly/splitkeyboard-zmk-config-zero
+requires: [sparkfun_pro_micro_rp2040]
+features:
+  - keys
+  - encoder
+siblings:
+  - Zero
+  - One

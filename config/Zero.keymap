@@ -8,6 +8,9 @@
             bindings = <
                 &mt LEFT_GUI M
             >;
+            sensor-bindings = <
+                &inc_dec_kp C_VOL_UP C_VOL_DN
+            >;
         };
     };
 };
