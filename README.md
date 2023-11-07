@@ -1,6 +1,6 @@
 # ZMK Config Zero
 
-Teste dos pinos
+Teste dos pinos  
 ZMK RP  
 0   GP1  
 1   GP0  
