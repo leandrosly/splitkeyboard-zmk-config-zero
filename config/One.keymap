@@ -8,6 +8,7 @@
         default_layer {
             bindings =
                 <&kp M>,
+                <&kp X>,
                 <&kp Q>;
         };
     };
