@@ -8,9 +8,9 @@
         label = "default_kscan";
         
         input-gpios =
-            <&pro_micro 9 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>,
-            <&pro_micro 14 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>,
-            <&pro_micro 15 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>,
-            <&pro_micro 16 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>;
+            <&pro_micro 10 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>,
+            <&pro_micro 13 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>,
+            <&pro_micro 17 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>,
+            <&pro_micro 18 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>;
     };
-};
+};qqqqqqqqq
