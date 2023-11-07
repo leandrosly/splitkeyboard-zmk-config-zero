@@ -9,8 +9,6 @@
             bindings =
                 <&kp M>,
                 <&kp X>,
-                <&kp R>,
-                <&kp S>,
                 <&kp Q>;
         };
     };
