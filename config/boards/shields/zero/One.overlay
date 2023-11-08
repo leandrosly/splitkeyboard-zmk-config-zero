@@ -18,6 +18,15 @@
     encoder: encoder {
         compatible = "alps,ec11";
         label = "ENCODER";
+        a-gpios = <&pro_micro 18 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
+        b-gpios = <&pro_micro 19 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
+        steps = <40>;
+        status = "okay";
+    };
+
+    encoder2: encoder2 {
+        compatible = "alps,ec11";
+        label = "ENCODER2";
         a-gpios = <&pro_micro 20 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
         b-gpios = <&pro_micro 21 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
         steps = <40>;
@@ -26,7 +35,7 @@
 
     sensors {
         compatible = "zmk,keymap-sensors";
-        sensors = <&encoder>;
+        sensors = <&encoder &encoder2>;
         triggers-per-rotation = <20>;
     };
 };
