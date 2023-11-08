@@ -1,6 +1,6 @@
 ---
 include:
-  - board: rpi_pico
+  - board: sparkfun_pro_micro_rp2040
     shield: Zero
-  - board: rpi_pico
+  - board: sparkfun_pro_micro_rp2040
     shield: One
