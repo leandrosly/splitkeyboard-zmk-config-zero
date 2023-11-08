@@ -13,6 +13,8 @@
                 <&kp A>,
                 <&kp B>,
                 <&kp V>,
+                <&kp G>,
+                <&kp P>,
                 <&kp Q>;
 
             sensor-bindings = 
