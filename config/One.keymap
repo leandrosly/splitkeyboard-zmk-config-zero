@@ -11,6 +11,8 @@
                 <&kp X>,
                 <&kp S>,
                 <&kp A>,
+                <&kp B>,
+                <&kp V>,
                 <&kp Q>;
 
             sensor-bindings = 

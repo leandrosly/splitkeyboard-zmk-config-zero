@@ -24,7 +24,7 @@
 			, <20 0 &gpio0 28 0>	/* D20/A2 */
 			, <21 0 &gpio0 29 0>	/* D21/A3 */
 			;
-	};
+	};mmmmmmmmmmmm
 
     chosen {
         zmk,kscan = &default_kscan;
@@ -35,6 +35,8 @@
         label = "default_kscan";
         
         input-gpios =
+            <&pro_micro 0 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>,
+            <&pro_micro 1 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>,
             <&pro_micro 2 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>,
             <&pro_micro 3 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>,
             <&pro_micro 4 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>,
