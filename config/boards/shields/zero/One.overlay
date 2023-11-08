@@ -24,7 +24,7 @@
 			, <20 0 &gpio0 28 0>	/* D20/A2 */
 			, <21 0 &gpio0 29 0>	/* D21/A3 */
 			;
-	};mmmmmmmmmmmm
+	};
 
     chosen {
         zmk,kscan = &default_kscan;
