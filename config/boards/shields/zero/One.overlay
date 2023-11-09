@@ -4,29 +4,36 @@
 		#gpio-cells = <2>;
 		gpio-map-mask = <0xffffffff 0xffffffc0>;
 		gpio-map-pass-thru = <0 0x3f>;
-		gpio-map
-			= <0 0 &gpio0 0 0>		/* D0 */
-			, <1 0 &gpio0 1 0>		/* D1 */
-			, <2 0 &gpio0 2 0>		/* D2 */
-			, <3 0 &gpio0 3 0>		/* D3 */
-			, <4 0 &gpio0 4 0>		/* D4/A6 */
-			, <5 0 &gpio0 5 0>		/* D5 */
-			, <6 0 &gpio0 6 0>		/* D6/A7 */
-			, <7 0 &gpio0 7 0>		/* D7 */
-			, <8 0 &gpio0 8 0>		/* D8/A8 */
-			, <9 0 &gpio0 9 0>		/* D9/A9 */
-			, <10 0 &gpio0 10 0>	/* MOD */
-			, <11 0 &gpio0 11 0>	/* MOD */
-			, <12 0 &gpio0 12 0>	/* MOD */
-			, <13 0 &gpio0 13 0>	/* MOD */
-			, <14 0 &gpio0 14 0>	/* MOD */
-			, <15 0 &gpio0 15 0>	/* MOD */
-			, <16 0 &gpio0 23 0>	/* D16 */
-			, <18 0 &gpio0 26 0>	/* D18/A0 */
-			, <19 0 &gpio0 27 0>	/* D19/A1 */
-			, <20 0 &gpio0 28 0>	/* D20/A2 */
-			, <21 0 &gpio0 29 0>	/* D21/A3 */
-			;
+		gpio-map =
+			<0 0 &gpio0 0 0>,
+			<1 0 &gpio0 1 0>,
+			<2 0 &gpio0 2 0>,
+			<3 0 &gpio0 3 0>,
+			<4 0 &gpio0 4 0>,
+			<5 0 &gpio0 5 0>,
+			<6 0 &gpio0 6 0>,
+			<7 0 &gpio0 7 0>,
+			<8 0 &gpio0 8 0>,
+			<9 0 &gpio0 9 0>,
+			<10 0 &gpio0 10 0>,
+			<11 0 &gpio0 11 0>,
+			<12 0 &gpio0 12 0>,
+			<13 0 &gpio0 13 0>,
+			<14 0 &gpio0 14 0>,
+			<15 0 &gpio0 15 0>,
+			<17 0 &gpio0 17 0>,
+			<18 0 &gpio0 18 0>,
+			<19 0 &gpio0 19 0>,
+			<20 0 &gpio0 20 0>,
+			<21 0 &gpio0 21 0>,
+			<22 0 &gpio0 22 0>,
+			<23 0 &gpio0 23 0>,
+			<24 0 &gpio0 24 0>,
+			<25 0 &gpio0 25 0>,
+			<26 0 &gpio0 26 0>,
+			<27 0 &gpio0 27 0>,
+			<28 0 &gpio0 28 0>,
+			<29 0 &gpio0 29 0>;
 	};
 
     chosen {
@@ -52,8 +59,8 @@
     encoder: encoder {
         compatible = "alps,ec11";
         label = "ENCODER";
-        a-gpios = <&pro_micro 18 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
-        b-gpios = <&pro_micro 19 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
+        a-gpios = <&pro_micro 26 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
+        b-gpios = <&pro_micro 27 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
         steps = <40>;
         status = "okay";
     };
@@ -61,8 +68,8 @@
     encoder2: encoder2 {
         compatible = "alps,ec11";
         label = "ENCODER2";
-        a-gpios = <&pro_micro 20 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
-        b-gpios = <&pro_micro 21 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
+        a-gpios = <&pro_micro 28 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
+        b-gpios = <&pro_micro 29 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
         steps = <40>;
         status = "okay";
     };
