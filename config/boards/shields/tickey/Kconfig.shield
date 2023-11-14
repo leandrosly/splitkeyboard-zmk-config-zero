@@ -1,2 +1,2 @@
-config SHIELD_TICKEY_DONGLE
-    def_bool $(shields_list_contains,tickey_dongle)
+config SHIELD_TICKEY
+    def_bool $(shields_list_contains,tickey)
