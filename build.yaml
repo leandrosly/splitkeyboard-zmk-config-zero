@@ -1,3 +1,5 @@
 include:
   - board: seeeduino_xiao_ble
+    shield: tickey_dongle
+  - board: seeeduino_xiao_ble
     shield: settings_reset
