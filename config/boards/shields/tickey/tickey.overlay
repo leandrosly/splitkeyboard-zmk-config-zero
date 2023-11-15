@@ -1,3 +1,5 @@
+#include "tickey.dtsi"
+
 / {
 
     chosen {
