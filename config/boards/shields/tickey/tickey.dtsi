@@ -1,0 +1,17 @@
+/ {
+
+    encoder: encoder {
+        compatible = "alps,ec11";
+        label = "ENCODER";
+        a-gpios = <&xiao_d 5 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
+        b-gpios = <&xiao_d 4 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
+        resolution = <2>;
+		status = "disabled";
+	};
+
+	sensors {
+		compatible = "zmk,keymap-sensors";
+		sensors = <&encoder>;
+	};
+
+};
